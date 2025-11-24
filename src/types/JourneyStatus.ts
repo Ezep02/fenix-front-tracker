@@ -1,0 +1,1 @@
+export type JourneyStatus = "pending" | "completed" | "tracking" | "retired";
