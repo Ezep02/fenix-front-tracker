@@ -1,7 +1,7 @@
 import { GetJourneyList } from "@/services/journey_service";
 import { useContext, useEffect } from "react";
 import { TrackingContext } from "../context/TrackingContext";
-import { JourneyStatus } from "@/features/dashboard/types/JourneyItem";
+import { JourneyStatus } from "@/types/JourneyStatus";
 
 const useTracking = () => {
   const { setJourneyList, journeyList } = useContext(TrackingContext)!;

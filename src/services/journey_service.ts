@@ -1,6 +1,7 @@
 import { AuthenticationInstance } from "@/configs/axios_config";
-import { JourneyFilterBy, JourneyStatus } from "@/features/dashboard/types/JourneyItem";
+import { JourneyFilterBy } from "@/features/dashboard/types/JourneyItem";
 import { Journey } from "@/types/journey";
+import { JourneyStatus } from "@/types/JourneyStatus";
 
 const JOURNEY_BASE_URL = `${import.meta.env.VITE_AUTH_BACKEND_URL}/journey`;
 

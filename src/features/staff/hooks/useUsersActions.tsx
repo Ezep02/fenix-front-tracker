@@ -1,5 +1,5 @@
 import { User } from "@/types/user";
-import React, { useActionState, useContext, useState } from "react";
+import { useActionState, useContext, useState } from "react";
 import { registerUser, updateUser } from "../services/users";
 import { StaffContext } from "../context/StaffContext";
 

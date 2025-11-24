@@ -138,7 +138,7 @@ const OpenDetails: React.FC<Props> = ({ item }) => {
             <BasicInfo item={item} />
 
             {/*  Información de la visita (si no está pendiente) */}
-            {item.visits.visited && <VisitInfo item={item} />}
+            {item?.visits?.visited && <VisitInfo item={item} />}
 
             {/* SELECTOR DE ACCIÓN */}
             <div className="md:col-span-2 mt-4">
@@ -158,7 +158,7 @@ const OpenDetails: React.FC<Props> = ({ item }) => {
             </div>
 
             {/* FORMULARIO EXTRA PARA RETIRED */}
-            {filterByStatus === "retired" && !item.visits.visited && (
+            {filterByStatus === "retired" && !item?.visits?.visited && (
               <div className="md:col-span-2 mt-4 bg-gray-100 rounded-3xl p-4 border border-gray-200 flex flex-col gap-1.5">
                 <p className="text-sm text-gray-600">
                   Formulario para marcar como retirado

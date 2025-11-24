@@ -1,4 +1,3 @@
-
 import { Visit } from "@/types/visit";
 import { JourneyStatus } from "./JourneyStatus";
 
@@ -28,7 +27,7 @@ export interface Journey {
   created_at?: Date;                   // created_at
   updated_at?: Date;                   // updated_at
 
-  visits: Visit
+  visits?: Visit
 }
 
 
